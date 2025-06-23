@@ -1,0 +1,127 @@
+{
+	"common": {
+		"name": "gardenmanager",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Gardenmanager",
+			"de": "Gardenmanager",
+			"ru": "Gardenmanager",
+			"pt": "Gardenmanager",
+			"nl": "Gardenmanager",
+			"fr": "Gardenmanager",
+			"it": "Gardenmanager",
+			"es": "Gardenmanager",
+			"pl": "Gardenmanager",
+			"uk": "Gardenmanager",
+			"zh-cn": "Gardenmanager"
+		},
+		"desc": {
+			"en": "gardenmanager",
+			"de": "gardenmanager",
+			"ru": "gardenmanager",
+			"pt": "gardenmanager",
+			"nl": "gardenmanager",
+			"fr": "gardenmanager",
+			"it": "gardenmanager",
+			"es": "gardenmanager",
+			"pl": "gardenmanager",
+			"uk": "gardenmanager",
+			"zh-cn": "gardenmanager"
+		},
+		"authors": ["paulpf <p.pfeifer@outlook.com>"],
+		"keywords": ["ioBroker", "template", "Smart Home", "home automation"],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "gardenmanager.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/paulpf/ioBroker.gardenmanager/main/admin/gardenmanager.png",
+		"readme": "https://github.com/paulpf/ioBroker.gardenmanager/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"restartAdapters": ["vis"],
+		"mode": "daemon",
+		"type": "visualization-widgets",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json",
+			"tab": "materialize"
+		},
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "Gardenmanager",
+				"de": "Gardenmanager",
+				"ru": "Gardenmanager",
+				"pt": "Gardenmanager",
+				"nl": "Gardenmanager",
+				"fr": "Gardenmanager",
+				"it": "Gardenmanager",
+				"es": "Gardenmanager",
+				"pl": "Gardenmanager",
+				"uk": "Gardenmanager",
+				"zh-cn": "Gardenmanager"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			},
+			"vis"
+		],
+		"globalDependencies": [
+			{
+				"admin": "7.0.23"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "gardenmanager",
+	"title": "Gardenmanager",
+	"features": ["adapter", "vis"],
+	"adminFeatures": ["tab"],
+	"type": "visualization-widgets",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "option1",
+			"defaultValue": true,
+			"inputType": "checkbox"
+		},
+		{
+			"key": "option2",
+			"defaultValue": "42",
+			"inputType": "text"
+		}
+	],
+	"language": "JavaScript",
+	"nodeVersion": "20",
+	"adminUi": "json",
+	"tabReact": "no",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"tools": ["ESLint", "type checking", "devcontainer", "Prettier"],
+	"authorName": "paulpf",
+	"authorGithub": "paulpf",
+	"authorEmail": "p.pfeifer@outlook.com",
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.6.5"
+}
